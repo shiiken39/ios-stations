@@ -12,6 +12,12 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    @IBOutlet weak var myButton: UIButton!
+    
+    @IBAction func changeButtonColor(_ sender: UIButton) {
+        sender.backgroundColor = UIColor.random
+    }
 
 }
 
