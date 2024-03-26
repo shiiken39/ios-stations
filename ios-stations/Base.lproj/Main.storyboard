@@ -18,26 +18,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhk-Cp-ZtV">
-                                <rect key="frame" x="20" y="426" width="374" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaL-tY-deU">
+                                <rect key="frame" x="107" y="426" width="200" height="44"/>
                                 <color key="backgroundColor" name="Main"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="44" id="0Ga-te-J1C"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" id="4cs-2a-9NA"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="92L-XY-vn9"/>
-                                    <constraint firstAttribute="height" constant="44" id="HxU-N2-oeA"/>
+                                    <constraint firstAttribute="height" constant="44" id="5jI-SS-poV"/>
+                                    <constraint firstAttribute="width" constant="200" id="weS-33-8Zp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Click">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="zhk-Cp-ZtV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AIg-2D-wuQ"/>
-                            <constraint firstItem="zhk-Cp-ZtV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RFn-6W-qcM"/>
-                            <constraint firstItem="zhk-Cp-ZtV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZhT-Xz-ChC"/>
+                            <constraint firstItem="CaL-tY-deU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Ut-zJ-5gQ"/>
+                            <constraint firstItem="CaL-tY-deU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jLi-sM-QTD"/>
                         </constraints>
                     </view>
                 </viewController>
