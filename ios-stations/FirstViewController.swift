@@ -6,19 +6,21 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-
+    
     var books: [Book]?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
-    @IBOutlet weak var myButton: UIButton!
-    
-    @IBAction func changeButtonColor(_ sender: UIButton) {
-        sender.backgroundColor = UIColor.random
+    @IBAction func presentSecondViewController() {
+        
+        let secondViewController = SecondViewController(url: "")
+        
+        // SecondViewControllerをモーダルで表示
+        present(secondViewController, animated: true, completion: nil)
     }
-
+    
 }
 
 extension FirstViewController: UITableViewDataSource {

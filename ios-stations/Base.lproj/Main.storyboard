@@ -31,7 +31,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="changeButtonColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cq0-TV-Hki"/>
+                                    <action selector="presentSecondViewController" destination="BYZ-38-t0r" eventType="touchUpInside" id="aeS-bC-Gov"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -42,9 +42,6 @@
                             <constraint firstItem="CaL-tY-deU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jLi-sM-QTD"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="myButton" destination="CaL-tY-deU" id="9J3-jS-5Qe"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
