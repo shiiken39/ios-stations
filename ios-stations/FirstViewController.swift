@@ -15,7 +15,8 @@ class FirstViewController: UIViewController {
     
     @IBAction func presentSecondViewController() {
         
-        let secondViewController = SecondViewController(url: "")
+        let url: String = "https://techbowl.co.jp/"
+        let secondViewController = SecondViewController(url: url)
         
         // SecondViewControllerをモーダルで表示
         present(secondViewController, animated: true, completion: nil)
