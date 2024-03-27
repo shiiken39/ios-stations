@@ -11,16 +11,17 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        // 書籍一覧を取得
+        let client = BookAPIClient()
+        client.fetchBooks(offset: 0) { [weak self] books in
+            DispatchQueue.main.async {
+                self?.books = books
+                debugPrint(books as Any)
+            }
+        }
     }
     
-    @IBAction func presentSecondViewController() {
-        
-        let url: String = "https://techbowl.co.jp/"
-        let secondViewController = SecondViewController(url: url)
-        
-        // SecondViewControllerをモーダルで表示
-        present(secondViewController, animated: true, completion: nil)
-    }
     
 }
 
