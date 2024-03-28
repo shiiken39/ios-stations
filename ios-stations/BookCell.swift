@@ -7,5 +7,15 @@ import UIKit
 
 class BookCell: UITableViewCell {
     
-    var element: Book!
+    
+    
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var detail: UILabel!
+    
+    var element: Book! {
+        didSet {
+            title?.text = element.title
+            detail?.text = element.detail
+        }
+    }
 }
