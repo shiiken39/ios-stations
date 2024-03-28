@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -81,13 +82,31 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="ppT-uR-flg"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUL-Em-dgM">
+                                <rect key="frame" x="100" y="727" width="214" height="35"/>
+                                <color key="backgroundColor" name="Main"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="63" id="7wd-m4-Jqw"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Click">
+                                    <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="click" destination="BYZ-38-t0r" eventType="touchUpInside" id="INx-HT-Eue"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dy8-FJ-5af" secondAttribute="bottom" id="5N8-J2-MAR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qUL-Em-dgM" secondAttribute="bottom" constant="100" id="CPs-yI-2bQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qUL-Em-dgM" secondAttribute="trailing" constant="100" id="Csn-SP-vWR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dy8-FJ-5af" secondAttribute="trailing" id="axZ-LM-ECd"/>
                             <constraint firstItem="dy8-FJ-5af" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="haw-Rr-Gnp"/>
+                            <constraint firstItem="qUL-Em-dgM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="uYu-Zo-EC3"/>
                             <constraint firstItem="dy8-FJ-5af" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="y0q-Va-pSS"/>
                         </constraints>
                     </view>
@@ -102,6 +121,9 @@
     </scenes>
     <resources>
         <image name="Book" width="192" height="192"/>
+        <namedColor name="Main">
+            <color red="0.81599998474121094" green="0.33700001239776611" blue="0.57599997520446777" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

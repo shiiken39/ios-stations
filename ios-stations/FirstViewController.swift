@@ -15,7 +15,27 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        // TableViewにRefreshControlを追加
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
+        tableView.refreshControl = refreshControl
+        
         // 書籍一覧を取得
+        fetchBooks()
+        
+    }
+    
+    @IBAction func click() {
+        fetchBooks()
+    }
+    
+    @objc func refresh(_ sender: UIRefreshControl) {
+        fetchBooks()
+        // 更新が終わったら、リフレッシュコントロールを終了する
+        sender.endRefreshing()
+    }
+    
+    func fetchBooks() {
         let client = BookAPIClient()
         client.fetchBooks(offset: 0) { [weak self] books in
             DispatchQueue.main.async {
